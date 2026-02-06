@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style type="text/css">
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+body {
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+color: #333;
+font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.6;
+word-wrap: break-word;
+}
+a {
+background-color: transparent;
+}
+a:active,
+a:hover {
+outline: 0;
+}
+strong {
+font-weight: bold;
+}
+h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+img {
+border: 0;
+}
+hr {
+box-sizing: content-box;
+height: 0;
+}
+pre {
+overflow: auto;
+}
+code,
+kbd,
+pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+input {
+color: inherit;
+font: inherit;
+margin: 0;
+}
+html input[disabled] {
+cursor: default;
+}
+input {
+line-height: normal;
+}
+input[type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+td,
+th {
+padding: 0;
+}
+* {
+box-sizing: border-box;
+}
+input {
+font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+a {
+color: #4078c0;
+text-decoration: none;
+}
+a:hover,
+a:active {
+text-decoration: underline;
+}
+hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #ddd;
+}
+hr:before {
+display: table;
+content: "";
+}
+hr:after {
+display: table;
+clear: both;
+content: "";
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 15px;
+margin-bottom: 15px;
+line-height: 1.1;
+}
+h1 {
+font-size: 30px;
+}
+h2 {
+font-size: 21px;
+}
+h3 {
+font-size: 16px;
+}
+h4 {
+font-size: 14px;
+}
+h5 {
+font-size: 12px;
+}
+h6 {
+font-size: 11px;
+}
+blockquote {
+margin: 0;
+}
+ul,
+ol {
+padding: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+ol ol,
+ul ol {
+list-style-type: lower-roman;
+}
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
+list-style-type: lower-alpha;
+}
+dd {
+margin-left: 0;
+}
+code {
+font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+pre {
+margin-top: 0;
+margin-bottom: 0;
+font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.select::-ms-expand {
+opacity: 0;
+}
+.octicon {
+font: normal normal normal 16px/1 octicons-link;
+display: inline-block;
+text-decoration: none;
+text-rendering: auto;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.octicon-link:before {
+content: '\f05c';
+}
+.markdown-body:before {
+display: table;
+content: "";
+}
+.markdown-body:after {
+display: table;
+clear: both;
+content: "";
+}
+.markdown-body>*:first-child {
+margin-top: 0 !important;
+}
+.markdown-body>*:last-child {
+margin-bottom: 0 !important;
+}
+a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+.anchor {
+display: inline-block;
+padding-right: 2px;
+margin-left: -18px;
+}
+.anchor:focus {
+outline: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin-top: 1em;
+margin-bottom: 16px;
+font-weight: bold;
+line-height: 1.4;
+}
+h1 .octicon-link,
+h2 .octicon-link,
+h3 .octicon-link,
+h4 .octicon-link,
+h5 .octicon-link,
+h6 .octicon-link {
+color: #000;
+vertical-align: middle;
+visibility: hidden;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor,
+h6:hover .anchor {
+text-decoration: none;
+}
+h1:hover .anchor .octicon-link,
+h2:hover .anchor .octicon-link,
+h3:hover .anchor .octicon-link,
+h4:hover .anchor .octicon-link,
+h5:hover .anchor .octicon-link,
+h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+h1 {
+padding-bottom: 0.3em;
+font-size: 2.25em;
+line-height: 1.2;
+border-bottom: 1px solid #eee;
+}
+h1 .anchor {
+line-height: 1;
+}
+h2 {
+padding-bottom: 0.3em;
+font-size: 1.75em;
+line-height: 1.225;
+border-bottom: 1px solid #eee;
+}
+h2 .anchor {
+line-height: 1;
+}
+h3 {
+font-size: 1.5em;
+line-height: 1.43;
+}
+h3 .anchor {
+line-height: 1.2;
+}
+h4 {
+font-size: 1.25em;
+}
+h4 .anchor {
+line-height: 1.2;
+}
+h5 {
+font-size: 1em;
+}
+h5 .anchor {
+line-height: 1.1;
+}
+h6 {
+font-size: 1em;
+color: #777;
+}
+h6 .anchor {
+line-height: 1.1;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table,
+pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+hr {
+height: 4px;
+padding: 0;
+margin: 16px 0;
+background-color: #e7e7e7;
+border: 0 none;
+}
+ul,
+ol {
+padding-left: 2em;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+li>p {
+margin-top: 16px;
+}
+dl {
+padding: 0;
+}
+dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: bold;
+}
+dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+blockquote {
+padding: 0 15px;
+color: #777;
+border-left: 4px solid #ddd;
+}
+blockquote>:first-child {
+margin-top: 0;
+}
+blockquote>:last-child {
+margin-bottom: 0;
+}
+table {
+display: block;
+width: 100%;
+overflow: auto;
+word-break: normal;
+word-break: keep-all;
+}
+table th {
+font-weight: bold;
+}
+table th,
+table td {
+padding: 6px 13px;
+border: 1px solid #ddd;
+}
+table tr {
+background-color: #fff;
+border-top: 1px solid #ccc;
+}
+table tr:nth-child(2n) {
+background-color: #f8f8f8;
+}
+img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+code {
+padding: 0;
+padding-top: 0.2em;
+padding-bottom: 0.2em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(0,0,0,0.04);
+border-radius: 3px;
+}
+code:before,
+code:after {
+letter-spacing: -0.2em;
+content: "\00a0";
+}
+pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+.highlight {
+margin-bottom: 16px;
+}
+.highlight pre,
+pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f7f7f7;
+border-radius: 3px;
+}
+.highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+pre {
+word-wrap: normal;
+}
+pre code {
+display: inline;
+max-width: initial;
+padding: 0;
+margin: 0;
+overflow: initial;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+pre code:before,
+pre code:after {
+content: normal;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.pl-c {
+color: #969896;
+}
+.pl-c1,
+.pl-s .pl-v {
+color: #0086b3;
+}
+.pl-e,
+.pl-en {
+color: #795da3;
+}
+.pl-s .pl-s1,
+.pl-smi {
+color: #333;
+}
+.pl-ent {
+color: #63a35c;
+}
+.pl-k {
+color: #a71d5d;
+}
+.pl-pds,
+.pl-s,
+.pl-s .pl-pse .pl-s1,
+.pl-sr,
+.pl-sr .pl-cce,
+.pl-sr .pl-sra,
+.pl-sr .pl-sre {
+color: #183691;
+}
+.pl-v {
+color: #ed6a43;
+}
+.pl-id {
+color: #b52a1d;
+}
+.pl-ii {
+background-color: #b52a1d;
+color: #f8f8f8;
+}
+.pl-sr .pl-cce {
+color: #63a35c;
+font-weight: bold;
+}
+.pl-ml {
+color: #693a17;
+}
+.pl-mh,
+.pl-mh .pl-en,
+.pl-ms {
+color: #1d3e81;
+font-weight: bold;
+}
+.pl-mq {
+color: #008080;
+}
+.pl-mi {
+color: #333;
+font-style: italic;
+}
+.pl-mb {
+color: #333;
+font-weight: bold;
+}
+.pl-md {
+background-color: #ffecec;
+color: #bd2c00;
+}
+.pl-mi1 {
+background-color: #eaffea;
+color: #55a532;
+}
+.pl-mdr {
+color: #795da3;
+font-weight: bold;
+}
+.pl-mo {
+color: #1d3e81;
+}
+kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #555;
+vertical-align: middle;
+background-color: #fcfcfc;
+border: solid 1px #ccc;
+border-bottom-color: #bbb;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #bbb;
+}
+.task-list-item {
+list-style-type: none;
+}
+.task-list-item+.task-list-item {
+margin-top: 3px;
+}
+.task-list-item input {
+margin: 0 0.35em 0.25em -1.6em;
+vertical-align: middle;
+}
+:checked+.radio-label {
+z-index: 1;
+position: relative;
+border-color: #4078c0;
+}
+.sourceLine {
+display: inline-block;
+}
+code .kw { color: #000000; }
+code .dt { color: #ed6a43; }
+code .dv { color: #009999; }
+code .bn { color: #009999; }
+code .fl { color: #009999; }
+code .ch { color: #009999; }
+code .st { color: #183691; }
+code .co { color: #969896; }
+code .ot { color: #0086b3; }
+code .al { color: #a61717; }
+code .fu { color: #63a35c; }
+code .er { color: #a61717; background-color: #e3d2d2; }
+code .wa { color: #000000; }
+code .cn { color: #008080; }
+code .sc { color: #008080; }
+code .vs { color: #183691; }
+code .ss { color: #183691; }
+code .im { color: #000000; }
+code .va {color: #008080; }
+code .cf { color: #000000; }
+code .op { color: #000000; }
+code .bu { color: #000000; }
+code .ex { color: #000000; }
+code .pp { color: #999999; }
+code .at { color: #008080; }
+code .do { color: #969896; }
+code .an { color: #008080; }
+code .cv { color: #008080; }
+code .in { color: #008080; }
+</style>
+<style>
+body {
+box-sizing: border-box;
+min-width: 200px;
+max-width: 980px;
+margin: 0 auto;
+padding: 45px;
+padding-top: 0px;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="main-model-on-case-time-series-data">MAIN MODEL ON CASE TIME
+SERIES DATA</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(</span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>  rio,            <span class="co"># import and export files</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>  here,           <span class="co"># locate files </span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>  tidyverse,      <span class="co"># data management and visualization</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>  gnm,</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>  dlnm,</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>  splines</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>)</span></code></pre></div>
+<h1 id="data">Data</h1>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="co"># data #-----------</span></span></code></pre></div>
+<h2 id="msoa-data">MSOA data</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="do">## MSOA data #--------------------------------</span></span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a>(datafull_0 <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="fu">here</span>(<span class="st">&quot;note_lehuynh/data_full_temperature.csv&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>  <span class="fu">tibble</span>())</span></code></pre></div>
+<pre><code>## # A tibble: 180,872 × 12
+##    MSOA11CD  date        d074 d75plus MSOA11NM            dtot  year month   day   doy   dow tmean
+##    &lt;chr&gt;     &lt;IDate&gt;    &lt;int&gt;   &lt;int&gt; &lt;chr&gt;              &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+##  1 E02000001 2006-06-01     0       0 City of London 001     0  2006     6     1   152     5  11.6
+##  2 E02000001 2006-06-02     0       0 City of London 001     0  2006     6     2   153     6  14.8
+##  3 E02000001 2006-06-03     0       0 City of London 001     0  2006     6     3   154     7  17.1
+##  4 E02000001 2006-06-04     0       0 City of London 001     0  2006     6     4   155     1  17.1
+##  5 E02000001 2006-06-05     0       0 City of London 001     0  2006     6     5   156     2  16.5
+##  6 E02000001 2006-06-06     0       0 City of London 001     0  2006     6     6   157     3  14.9
+##  7 E02000001 2006-06-07     0       0 City of London 001     0  2006     6     7   158     4  18.7
+##  8 E02000001 2006-06-08     0       0 City of London 001     0  2006     6     8   159     5  20.6
+##  9 E02000001 2006-06-09     0       0 City of London 001     0  2006     6     9   160     6  20.1
+## 10 E02000001 2006-06-10     0       1 City of London 001     1  2006     6    10   161     7  21.7
+## # ℹ 180,862 more rows</code></pre>
+<p>Define the strata</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a>(datafull_1 <span class="ot">&lt;-</span> datafull_0 <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(MSOA11CD, year, month), </span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a>                as.factor),</span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a>         <span class="at">stratum =</span> <span class="fu">factor</span>(<span class="fu">paste</span>(MSOA11CD, year, month, <span class="at">sep =</span> <span class="st">&quot;:&quot;</span>))) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a>  <span class="fu">select</span>(MSOA11CD,</span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a>         date,</span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a>         doy,</span>
+<span id="cb5-8"><a href="#cb5-8" tabindex="-1"></a>         dow,</span>
+<span id="cb5-9"><a href="#cb5-9" tabindex="-1"></a>         stratum,</span>
+<span id="cb5-10"><a href="#cb5-10" tabindex="-1"></a>         d074,</span>
+<span id="cb5-11"><a href="#cb5-11" tabindex="-1"></a>         d75plus,</span>
+<span id="cb5-12"><a href="#cb5-12" tabindex="-1"></a>         dtot,</span>
+<span id="cb5-13"><a href="#cb5-13" tabindex="-1"></a>         tmean,</span>
+<span id="cb5-14"><a href="#cb5-14" tabindex="-1"></a>         year,</span>
+<span id="cb5-15"><a href="#cb5-15" tabindex="-1"></a>         month,</span>
+<span id="cb5-16"><a href="#cb5-16" tabindex="-1"></a>         day))</span></code></pre></div>
+<pre><code>## # A tibble: 180,872 × 12
+##    MSOA11CD  date         doy   dow stratum           d074 d75plus  dtot tmean year  month   day
+##    &lt;fct&gt;     &lt;IDate&gt;    &lt;int&gt; &lt;int&gt; &lt;fct&gt;            &lt;int&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt; &lt;int&gt;
+##  1 E02000001 2006-06-01   152     5 E02000001:2006:6     0       0     0  11.6 2006  6         1
+##  2 E02000001 2006-06-02   153     6 E02000001:2006:6     0       0     0  14.8 2006  6         2
+##  3 E02000001 2006-06-03   154     7 E02000001:2006:6     0       0     0  17.1 2006  6         3
+##  4 E02000001 2006-06-04   155     1 E02000001:2006:6     0       0     0  17.1 2006  6         4
+##  5 E02000001 2006-06-05   156     2 E02000001:2006:6     0       0     0  16.5 2006  6         5
+##  6 E02000001 2006-06-06   157     3 E02000001:2006:6     0       0     0  14.9 2006  6         6
+##  7 E02000001 2006-06-07   158     4 E02000001:2006:6     0       0     0  18.7 2006  6         7
+##  8 E02000001 2006-06-08   159     5 E02000001:2006:6     0       0     0  20.6 2006  6         8
+##  9 E02000001 2006-06-09   160     6 E02000001:2006:6     0       0     0  20.1 2006  6         9
+## 10 E02000001 2006-06-10   161     7 E02000001:2006:6     0       1     1  21.7 2006  6        10
+## # ℹ 180,862 more rows</code></pre>
+<p>Generate <code>ind</code>: sum of events within stratum</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a>(ind_df <span class="ot">&lt;-</span> datafull_1 <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(stratum) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">ind =</span> <span class="fu">sum</span>(dtot)))</span></code></pre></div>
+<pre><code>## # A tibble: 5,898 × 2
+##    stratum            ind
+##    &lt;fct&gt;            &lt;int&gt;
+##  1 E02000001:2006:6     3
+##  2 E02000001:2006:7     2
+##  3 E02000001:2006:8     7
+##  4 E02000001:2013:6     0
+##  5 E02000001:2013:7     4
+##  6 E02000001:2013:8     0
+##  7 E02000002:2006:6     7
+##  8 E02000002:2006:7     2
+##  9 E02000002:2006:8     8
+## 10 E02000002:2013:6     6
+## # ℹ 5,888 more rows</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a>(datafull <span class="ot">&lt;-</span> datafull_1 <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(ind_df, <span class="at">by =</span> <span class="fu">join_by</span>(stratum)))</span></code></pre></div>
+<pre><code>## # A tibble: 180,872 × 13
+##    MSOA11CD  date         doy   dow stratum          d074 d75plus  dtot tmean year  month   day   ind
+##    &lt;fct&gt;     &lt;IDate&gt;    &lt;int&gt; &lt;int&gt; &lt;fct&gt;           &lt;int&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt; &lt;int&gt; &lt;int&gt;
+##  1 E02000001 2006-06-01   152     5 E02000001:2006…     0       0     0  11.6 2006  6         1     3
+##  2 E02000001 2006-06-02   153     6 E02000001:2006…     0       0     0  14.8 2006  6         2     3
+##  3 E02000001 2006-06-03   154     7 E02000001:2006…     0       0     0  17.1 2006  6         3     3
+##  4 E02000001 2006-06-04   155     1 E02000001:2006…     0       0     0  17.1 2006  6         4     3
+##  5 E02000001 2006-06-05   156     2 E02000001:2006…     0       0     0  16.5 2006  6         5     3
+##  6 E02000001 2006-06-06   157     3 E02000001:2006…     0       0     0  14.9 2006  6         6     3
+##  7 E02000001 2006-06-07   158     4 E02000001:2006…     0       0     0  18.7 2006  6         7     3
+##  8 E02000001 2006-06-08   159     5 E02000001:2006…     0       0     0  20.6 2006  6         8     3
+##  9 E02000001 2006-06-09   160     6 E02000001:2006…     0       0     0  20.1 2006  6         9     3
+## 10 E02000001 2006-06-10   161     7 E02000001:2006…     0       1     1  21.7 2006  6        10     3
+## # ℹ 180,862 more rows</code></pre>
+<h2 id="aggregated-data">Aggregated data</h2>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="do">## aggregated data #-------------------------------</span></span>
+<span id="cb11-2"><a href="#cb11-2" tabindex="-1"></a>(dataggr <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="fu">here</span>(<span class="st">&quot;note_lehuynh/data_aggregated_temperature.csv&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb11-3"><a href="#cb11-3" tabindex="-1"></a>  <span class="fu">tibble</span>())</span></code></pre></div>
+<pre><code>## # A tibble: 184 × 10
+##    date        d074 d75plus  dtot  year month   day   doy   dow tmean
+##    &lt;IDate&gt;    &lt;int&gt;   &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;int&gt; &lt;dbl&gt;
+##  1 2006-06-01    45      72   117  2006     6     1   152     5  10.9
+##  2 2006-06-02    51     108   159  2006     6     2   153     6  14.6
+##  3 2006-06-03    45      85   130  2006     6     3   154     7  16.4
+##  4 2006-06-04    51      88   139  2006     6     4   155     1  16.4
+##  5 2006-06-05    55      74   129  2006     6     5   156     2  15.9
+##  6 2006-06-06    56      78   134  2006     6     6   157     3  14.4
+##  7 2006-06-07    58      78   136  2006     6     7   158     4  18.0
+##  8 2006-06-08    62      74   136  2006     6     8   159     5  19.8
+##  9 2006-06-09    61      82   143  2006     6     9   160     6  19.2
+## 10 2006-06-10    57      95   152  2006     6    10   161     7  21.1
+## # ℹ 174 more rows</code></pre>
+<h1 id="model-fitting">Model fitting</h1>
+<div class="sourceCode" id="cb13"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="co"># model fitting #-----------</span></span></code></pre></div>
+<h2 id="msoa-data-1">MSOA data</h2>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="do">## MSOA data #--------------------------------</span></span>
+<span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a><span class="co"># DEFINE SPLINES OF DAY OF THE YEAR</span></span>
+<span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>spldoy <span class="ot">&lt;-</span> <span class="fu">onebasis</span>(datafull<span class="sc">$</span>doy, <span class="st">&quot;ns&quot;</span>, <span class="at">df=</span><span class="dv">3</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a><span class="fu">summary</span>(spldoy)</span></code></pre></div>
+<pre><code>## BASIS FUNCTION
+## observations: 180872 
+## range: 152 243 
+## df: 3 
+## fun: ns 
+## knots: 182 213 
+## intercept: FALSE 
+## Boundary.knots: 152 243</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="co"># DEFINE THE CROSS-BASIS FOR TEMPERATURE FROM THE EXPOSURE HISTORY MATRIX</span></span>
+<span id="cb16-2"><a href="#cb16-2" tabindex="-1"></a><span class="co"># NB: USE group TO IDENTIFY LACK OF CONTINUITY IN SERIES BY MSOA AND YEAR</span></span>
+<span id="cb16-3"><a href="#cb16-3" tabindex="-1"></a>argvar <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">fun =</span> <span class="st">&quot;ns&quot;</span>, <span class="at">knots =</span> <span class="fu">quantile</span>(datafull<span class="sc">$</span>tmean, <span class="fu">c</span>(<span class="dv">50</span>, <span class="dv">90</span>) <span class="sc">/</span> <span class="dv">100</span>, <span class="at">na.rm =</span> T))</span>
+<span id="cb16-4"><a href="#cb16-4" tabindex="-1"></a>arglag <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">fun =</span> <span class="st">&quot;ns&quot;</span>, <span class="at">knots =</span> <span class="dv">1</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" tabindex="-1"></a><span class="co"># group = factor(MSOA-year)</span></span>
+<span id="cb16-7"><a href="#cb16-7" tabindex="-1"></a>group <span class="ot">&lt;-</span> <span class="fu">factor</span>(<span class="fu">paste</span>(datafull<span class="sc">$</span>MSOA11CD, datafull<span class="sc">$</span>year, <span class="at">sep =</span> <span class="st">&quot;-&quot;</span>))</span>
+<span id="cb16-8"><a href="#cb16-8" tabindex="-1"></a><span class="fu">length</span>(group)</span></code></pre></div>
+<pre><code>## [1] 180872</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" tabindex="-1"></a><span class="fu">head</span>(group)</span></code></pre></div>
+<pre><code>## [1] E02000001-2006 E02000001-2006 E02000001-2006 E02000001-2006 E02000001-2006 E02000001-2006
+## 1966 Levels: E02000001-2006 E02000001-2013 E02000002-2006 E02000002-2013 ... E02006931-2013</code></pre>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" tabindex="-1"></a>cbtmean <span class="ot">&lt;-</span> <span class="fu">crossbasis</span>(datafull<span class="sc">$</span>tmean,</span>
+<span id="cb20-2"><a href="#cb20-2" tabindex="-1"></a>                      <span class="at">lag =</span> <span class="dv">3</span>, </span>
+<span id="cb20-3"><a href="#cb20-3" tabindex="-1"></a>                      <span class="at">argvar =</span> argvar, </span>
+<span id="cb20-4"><a href="#cb20-4" tabindex="-1"></a>                      <span class="at">arglag =</span> arglag,</span>
+<span id="cb20-5"><a href="#cb20-5" tabindex="-1"></a>                      <span class="at">group =</span> group)</span>
+<span id="cb20-6"><a href="#cb20-6" tabindex="-1"></a></span>
+<span id="cb20-7"><a href="#cb20-7" tabindex="-1"></a><span class="fu">summary</span>(cbtmean)</span></code></pre></div>
+<pre><code>## CROSSBASIS FUNCTIONS
+## observations: 180872 
+## groups: 1966 
+## range: 8.551893 to 27.17635 
+## lag period: 0 3 
+## total df:  9 
+## 
+## BASIS FOR VAR:
+## fun: ns 
+## knots: 18.27253 22.91653 
+## intercept: FALSE 
+## Boundary.knots: 8.551893 27.17635 
+## 
+## BASIS FOR LAG:
+## fun: ns 
+## knots: 1 
+## intercept: TRUE 
+## Boundary.knots: 0 3</code></pre>
+<div class="sourceCode" id="cb22"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" tabindex="-1"></a><span class="co"># model fitting</span></span>
+<span id="cb22-2"><a href="#cb22-2" tabindex="-1"></a>modfull <span class="ot">&lt;-</span> <span class="fu">gnm</span>(dtot <span class="sc">~</span> cbtmean <span class="sc">+</span> spldoy<span class="sc">:</span><span class="fu">factor</span>(year) <span class="sc">+</span> <span class="fu">factor</span>(dow), </span>
+<span id="cb22-3"><a href="#cb22-3" tabindex="-1"></a>               <span class="at">eliminate =</span> stratum, </span>
+<span id="cb22-4"><a href="#cb22-4" tabindex="-1"></a>               <span class="at">data =</span> datafull, </span>
+<span id="cb22-5"><a href="#cb22-5" tabindex="-1"></a>               <span class="at">family =</span> quasipoisson, </span>
+<span id="cb22-6"><a href="#cb22-6" tabindex="-1"></a>               <span class="at">subset =</span> ind <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb22-7"><a href="#cb22-7" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="#cb22-8" tabindex="-1"></a><span class="fu">summary</span>(modfull)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## gnm(formula = dtot ~ cbtmean + spldoy:factor(year) + factor(dow), 
+##     eliminate = stratum, family = quasipoisson, data = datafull,     subset = ind &gt; 0)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.2074  -0.5632  -0.4500  -0.3395   3.8816  
+## 
+## Coefficients of interest:
+##                            Estimate Std. Error t value Pr(&gt;|t|)   
+## cbtmeanv1.l1              -0.003663   0.125338  -0.029  0.97669   
+## cbtmeanv1.l2               0.088437   0.062169   1.423  0.15488   
+## cbtmeanv1.l3              -0.172436   0.065952  -2.615  0.00893 **
+## cbtmeanv2.l1              -0.210509   0.426390  -0.494  0.62152   
+## cbtmeanv2.l2              -0.153488   0.265505  -0.578  0.56320   
+## cbtmeanv2.l3              -0.360522   0.224083  -1.609  0.10764   
+## cbtmeanv3.l1              -0.108577   0.145496  -0.746  0.45551   
+## cbtmeanv3.l2               0.185967   0.086221   2.157  0.03102 * 
+## cbtmeanv3.l3              -0.194610   0.081405  -2.391  0.01682 * 
+## factor(dow)2               0.004140   0.025936   0.160  0.87317   
+## factor(dow)3               0.020476   0.026595   0.770  0.44134   
+## factor(dow)4              -0.027980   0.027442  -1.020  0.30792   
+## factor(dow)5              -0.041657   0.026552  -1.569  0.11667   
+## factor(dow)6               0.016669   0.026216   0.636  0.52489   
+## factor(dow)7               0.019495   0.025935   0.752  0.45225   
+## spldoyb1:factor(year)2006 -0.104383   0.091089  -1.146  0.25182   
+## spldoyb2:factor(year)2006 -0.076555   0.153179  -0.500  0.61723   
+## spldoyb3:factor(year)2006 -0.021808   0.093549  -0.233  0.81567   
+## spldoyb1:factor(year)2013 -0.166538   0.101287  -1.644  0.10013   
+## spldoyb2:factor(year)2013 -0.037906   0.195219  -0.194  0.84604   
+## spldoyb3:factor(year)2013  0.009675   0.094106   0.103  0.91812   
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for quasipoisson family taken to be 1.000459)
+## 
+## Residual deviance: 87258 on 162757 degrees of freedom
+## AIC: NA
+## 
+## Number of iterations: 2</code></pre>
+<h2 id="aggregated-data-1">Aggregated data</h2>
+<div class="sourceCode" id="cb24"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" tabindex="-1"></a><span class="do">## aggregated data #-------------------------------</span></span>
+<span id="cb24-2"><a href="#cb24-2" tabindex="-1"></a><span class="co"># RE-DEFINE THE CROSS-BASIS WITH THE SAME PARAMETRISATION</span></span>
+<span id="cb24-3"><a href="#cb24-3" tabindex="-1"></a><span class="co"># NB: CAN USE SERIES DIRECTLY INSTEAD THAN MATRIX, BUT USE group FOR YEARS</span></span>
+<span id="cb24-4"><a href="#cb24-4" tabindex="-1"></a>cbtmeanaggr <span class="ot">&lt;-</span> <span class="fu">crossbasis</span>(dataggr<span class="sc">$</span>tmean,</span>
+<span id="cb24-5"><a href="#cb24-5" tabindex="-1"></a>                          <span class="at">lag =</span> <span class="dv">3</span>, </span>
+<span id="cb24-6"><a href="#cb24-6" tabindex="-1"></a>                          <span class="at">argvar =</span> argvar, </span>
+<span id="cb24-7"><a href="#cb24-7" tabindex="-1"></a>                          <span class="at">arglag =</span> arglag,</span>
+<span id="cb24-8"><a href="#cb24-8" tabindex="-1"></a>                          <span class="at">group =</span> dataggr<span class="sc">$</span>year)</span>
+<span id="cb24-9"><a href="#cb24-9" tabindex="-1"></a><span class="fu">summary</span>(cbtmeanaggr)</span></code></pre></div>
+<pre><code>## CROSSBASIS FUNCTIONS
+## observations: 184 
+## groups: 2 
+## range: 10.94046 to 25.84667 
+## lag period: 0 3 
+## total df:  9 
+## 
+## BASIS FOR VAR:
+## fun: ns 
+## knots: 18.27253 22.91653 
+## intercept: FALSE 
+## Boundary.knots: 10.94046 25.84667 
+## 
+## BASIS FOR LAG:
+## fun: ns 
+## knots: 1 
+## intercept: TRUE 
+## Boundary.knots: 0 3</code></pre>
+<div class="sourceCode" id="cb26"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" tabindex="-1"></a><span class="co"># RUN THE MODEL ON AGGREGATED DATA</span></span>
+<span id="cb26-2"><a href="#cb26-2" tabindex="-1"></a>modaggr <span class="ot">&lt;-</span> <span class="fu">glm</span>(dtot <span class="sc">~</span> cbtmeanaggr <span class="sc">+</span> <span class="fu">ns</span>(doy, <span class="at">df =</span> <span class="dv">3</span>)<span class="sc">:</span><span class="fu">factor</span>(year) <span class="sc">+</span> <span class="fu">factor</span>(dow),</span>
+<span id="cb26-3"><a href="#cb26-3" tabindex="-1"></a>               <span class="at">data =</span> dataggr, </span>
+<span id="cb26-4"><a href="#cb26-4" tabindex="-1"></a>               <span class="at">family =</span> quasipoisson)</span>
+<span id="cb26-5"><a href="#cb26-5" tabindex="-1"></a></span>
+<span id="cb26-6"><a href="#cb26-6" tabindex="-1"></a><span class="fu">summary</span>(modaggr)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## glm(formula = dtot ~ cbtmeanaggr + ns(doy, df = 3):factor(year) + 
+##     factor(dow), family = quasipoisson, data = dataggr)
+## 
+## Coefficients:
+##                                     Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept)                        4.9111137  0.0775891  63.296  &lt; 2e-16 ***
+## cbtmeanaggrv1.l1                   0.0007469  0.1066669   0.007 0.994422    
+## cbtmeanaggrv1.l2                   0.1330015  0.0399807   3.327 0.001096 ** 
+## cbtmeanaggrv1.l3                  -0.1303566  0.0569528  -2.289 0.023430 *  
+## cbtmeanaggrv2.l1                   0.0356536  0.3059613   0.117 0.907383    
+## cbtmeanaggrv2.l2                   0.1548950  0.1412681   1.096 0.274567    
+## cbtmeanaggrv2.l3                  -0.2750218  0.1592287  -1.727 0.086109 .  
+## cbtmeanaggrv3.l1                  -0.0132214  0.1101050  -0.120 0.904574    
+## cbtmeanaggrv3.l2                   0.1892219  0.0435557   4.344 2.51e-05 ***
+## cbtmeanaggrv3.l3                  -0.1583888  0.0574982  -2.755 0.006574 ** 
+## factor(dow)2                       0.0053402  0.0287620   0.186 0.852946    
+## factor(dow)3                       0.0251156  0.0295259   0.851 0.396279    
+## factor(dow)4                      -0.0243638  0.0305525  -0.797 0.426408    
+## factor(dow)5                      -0.0417654  0.0295330  -1.414 0.159299    
+## factor(dow)6                       0.0128063  0.0290893   0.440 0.660373    
+## factor(dow)7                       0.0153566  0.0286629   0.536 0.592883    
+## ns(doy, df = 3)1:factor(year)2006 -0.1163399  0.0496972  -2.341 0.020499 *  
+## ns(doy, df = 3)2:factor(year)2006 -0.1245087  0.1059928  -1.175 0.241909    
+## ns(doy, df = 3)3:factor(year)2006  0.0201842  0.0405824   0.497 0.619633    
+## ns(doy, df = 3)1:factor(year)2013 -0.2595542  0.0598748  -4.335 2.60e-05 ***
+## ns(doy, df = 3)2:factor(year)2013 -0.3531792  0.0963282  -3.666 0.000337 ***
+## ns(doy, df = 3)3:factor(year)2013 -0.0552921  0.0425170  -1.300 0.195358    
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for quasipoisson family taken to be 1.236377)
+## 
+##     Null deviance: 385.82  on 177  degrees of freedom
+## Residual deviance: 193.78  on 156  degrees of freedom
+##   (6 observations deleted due to missingness)
+## AIC: NA
+## 
+## Number of Fisher Scoring iterations: 4</code></pre>
+<h2 id="predict-and-plot">PREDICT AND PLOT</h2>
+<div class="sourceCode" id="cb28"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" tabindex="-1"></a><span class="do">## predict and plot #------------------------</span></span>
+<span id="cb28-2"><a href="#cb28-2" tabindex="-1"></a><span class="co"># PREDICT</span></span>
+<span id="cb28-3"><a href="#cb28-3" tabindex="-1"></a>cpfull <span class="ot">&lt;-</span> <span class="fu">crosspred</span>(cbtmean, modfull, <span class="at">cen =</span> <span class="dv">16</span>)</span>
+<span id="cb28-4"><a href="#cb28-4" tabindex="-1"></a>cpaggr <span class="ot">&lt;-</span> <span class="fu">crosspred</span>(cbtmeanaggr, modaggr, <span class="at">cen =</span> <span class="dv">16</span>)</span>
+<span id="cb28-5"><a href="#cb28-5" tabindex="-1"></a></span>
+<span id="cb28-6"><a href="#cb28-6" tabindex="-1"></a><span class="co"># PLOT</span></span>
+<span id="cb28-7"><a href="#cb28-7" tabindex="-1"></a>col <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;darkgoldenrod3&quot;</span>, <span class="st">&quot;aquamarine3&quot;</span>)</span>
+<span id="cb28-8"><a href="#cb28-8" tabindex="-1"></a>parold <span class="ot">&lt;-</span> <span class="fu">par</span>(<span class="at">no.readonly =</span> T)</span>
+<span id="cb28-9"><a href="#cb28-9" tabindex="-1"></a></span>
+<span id="cb28-10"><a href="#cb28-10" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="fl">0.5</span>), </span>
+<span id="cb28-11"><a href="#cb28-11" tabindex="-1"></a>    <span class="at">las =</span> <span class="dv">1</span>, </span>
+<span id="cb28-12"><a href="#cb28-12" tabindex="-1"></a>    <span class="at">mgp =</span> <span class="fu">c</span>(<span class="fl">2.5</span>, <span class="dv">1</span>, <span class="dv">0</span>))</span>
+<span id="cb28-13"><a href="#cb28-13" tabindex="-1"></a></span>
+<span id="cb28-14"><a href="#cb28-14" tabindex="-1"></a><span class="fu">plot</span>(cpfull, <span class="st">&quot;overall&quot;</span>,</span>
+<span id="cb28-15"><a href="#cb28-15" tabindex="-1"></a>  <span class="at">ylim =</span> <span class="fu">c</span>(<span class="fl">0.8</span>, <span class="fl">1.8</span>), </span>
+<span id="cb28-16"><a href="#cb28-16" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">&quot;RR&quot;</span>, </span>
+<span id="cb28-17"><a href="#cb28-17" tabindex="-1"></a>  <span class="at">col =</span> col[<span class="dv">1</span>], </span>
+<span id="cb28-18"><a href="#cb28-18" tabindex="-1"></a>  <span class="at">lwd =</span> <span class="fl">1.5</span>,</span>
+<span id="cb28-19"><a href="#cb28-19" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="fu">expression</span>(<span class="fu">paste</span>(<span class="st">&quot;Temperature (&quot;</span> <span class="sc">*</span> degree, <span class="st">&quot;C)&quot;</span>)),</span>
+<span id="cb28-20"><a href="#cb28-20" tabindex="-1"></a>  <span class="at">ci.arg =</span> <span class="fu">list</span>(<span class="at">col =</span> <span class="fu">alpha</span>(col[<span class="dv">1</span>], <span class="fl">0.2</span>)))</span>
+<span id="cb28-21"><a href="#cb28-21" tabindex="-1"></a></span>
+<span id="cb28-22"><a href="#cb28-22" tabindex="-1"></a><span class="fu">lines</span>(cpaggr, <span class="st">&quot;overall&quot;</span>,</span>
+<span id="cb28-23"><a href="#cb28-23" tabindex="-1"></a>  <span class="at">ci =</span> <span class="st">&quot;area&quot;</span>, </span>
+<span id="cb28-24"><a href="#cb28-24" tabindex="-1"></a>  <span class="at">col =</span> col[<span class="dv">2</span>], </span>
+<span id="cb28-25"><a href="#cb28-25" tabindex="-1"></a>  <span class="at">lwd =</span> <span class="fl">1.5</span>,</span>
+<span id="cb28-26"><a href="#cb28-26" tabindex="-1"></a>  <span class="at">ci.arg =</span> <span class="fu">list</span>(<span class="at">col =</span> <span class="fu">alpha</span>(col[<span class="dv">2</span>], <span class="fl">0.2</span>)))</span>
+<span id="cb28-27"><a href="#cb28-27" tabindex="-1"></a></span>
+<span id="cb28-28"><a href="#cb28-28" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&quot;top&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;Case TS&quot;</span>, <span class="st">&quot;Aggregated TS&quot;</span>),</span>
+<span id="cb28-29"><a href="#cb28-29" tabindex="-1"></a>  <span class="at">lty =</span> <span class="dv">1</span>, </span>
+<span id="cb28-30"><a href="#cb28-30" tabindex="-1"></a>  <span class="at">lwd =</span> <span class="fl">1.5</span>, </span>
+<span id="cb28-31"><a href="#cb28-31" tabindex="-1"></a>  <span class="at">col =</span> col, </span>
+<span id="cb28-32"><a href="#cb28-32" tabindex="-1"></a>  <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>,</span>
+<span id="cb28-33"><a href="#cb28-33" tabindex="-1"></a>  <span class="at">inset =</span> <span class="fl">0.05</span>, </span>
+<span id="cb28-34"><a href="#cb28-34" tabindex="-1"></a>  <span class="at">y.intersp =</span> <span class="dv">2</span>, </span>
+<span id="cb28-35"><a href="#cb28-35" tabindex="-1"></a>  <span class="at">cex =</span> <span class="fl">0.8</span>)</span></code></pre></div>
+<p><img role="img" src="data:image/png;base64,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" /><!-- --></p>
+<div class="sourceCode" id="cb29"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" tabindex="-1"></a><span class="fu">par</span>(parold)</span></code></pre></div>
+<h1 id="interaction-models">INTERACTION MODELS</h1>
+<div class="sourceCode" id="cb30"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" tabindex="-1"></a><span class="co"># interaction models #----------------------------</span></span></code></pre></div>
+<h2 id="data-1">Data</h2>
+<div class="sourceCode" id="cb31"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" tabindex="-1"></a><span class="do">## data #-----------</span></span>
+<span id="cb31-2"><a href="#cb31-2" tabindex="-1"></a>(df_imd <span class="ot">&lt;-</span> rio<span class="sc">::</span><span class="fu">import</span>(<span class="fu">here</span>(<span class="st">&quot;note_lehuynh/data_full_imd.csv&quot;</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-3"><a href="#cb31-3" tabindex="-1"></a>   <span class="fu">tibble</span>() <span class="sc">%&gt;%</span> </span>
+<span id="cb31-4"><a href="#cb31-4" tabindex="-1"></a>   <span class="fu">select</span>(MSOA11CD,</span>
+<span id="cb31-5"><a href="#cb31-5" tabindex="-1"></a>          imdscore,</span>
+<span id="cb31-6"><a href="#cb31-6" tabindex="-1"></a>          imdrank) <span class="sc">%&gt;%</span> </span>
+<span id="cb31-7"><a href="#cb31-7" tabindex="-1"></a>   <span class="fu">distinct</span>())</span></code></pre></div>
+<pre><code>## # A tibble: 983 × 3
+##    MSOA11CD  imdscore imdrank
+##    &lt;chr&gt;        &lt;dbl&gt;   &lt;dbl&gt;
+##  1 E02000001     14.3  20373.
+##  2 E02000002     38.3   5390.
+##  3 E02000003     25.4  10974 
+##  4 E02000004     24.9  11586.
+##  5 E02000005     32.9   7149 
+##  6 E02000007     41.1   4664 
+##  7 E02000008     35.8   5918 
+##  8 E02000009     35.8   5966.
+##  9 E02000010     37.6   5300.
+## 10 E02000011     25.7  10549.
+## # ℹ 973 more rows</code></pre>
+<div class="sourceCode" id="cb33"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" tabindex="-1"></a>df_imd <span class="sc">%&gt;%</span> </span>
+<span id="cb33-2"><a href="#cb33-2" tabindex="-1"></a>  <span class="fu">count</span>(MSOA11CD, imdscore, imdrank) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-3"><a href="#cb33-3" tabindex="-1"></a>  <span class="fu">arrange</span>(MSOA11CD) <span class="sc">%&gt;%</span> </span>
+<span id="cb33-4"><a href="#cb33-4" tabindex="-1"></a>  <span class="fu">print</span>(<span class="at">n =</span> <span class="dv">20</span>)</span></code></pre></div>
+<pre><code>## # A tibble: 983 × 4
+##    MSOA11CD  imdscore imdrank     n
+##    &lt;chr&gt;        &lt;dbl&gt;   &lt;dbl&gt; &lt;int&gt;
+##  1 E02000001     14.3  20373.     1
+##  2 E02000002     38.3   5390.     1
+##  3 E02000003     25.4  10974      1
+##  4 E02000004     24.9  11586.     1
+##  5 E02000005     32.9   7149      1
+##  6 E02000007     41.1   4664      1
+##  7 E02000008     35.8   5918      1
+##  8 E02000009     35.8   5966.     1
+##  9 E02000010     37.6   5300.     1
+## 10 E02000011     25.7  10549.     1
+## 11 E02000012     20.0  14352      1
+## 12 E02000013     38.5   4971      1
+## 13 E02000014     39.3   4745.     1
+## 14 E02000015     42.9   3814.     1
+## 15 E02000016     37.2   5519.     1
+## 16 E02000017     28.6   9065.     1
+## 17 E02000018     38.4   5186.     1
+## 18 E02000019     35.0   6246.     1
+## 19 E02000020     33.7   6653.     1
+## 20 E02000021     33.4   6956      1
+## # ℹ 963 more rows</code></pre>
+<div class="sourceCode" id="cb35"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" tabindex="-1"></a>(datafull_int <span class="ot">&lt;-</span> datafull <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(df_imd, <span class="at">by =</span> <span class="fu">join_by</span>(MSOA11CD)))</span></code></pre></div>
+<pre><code>## # A tibble: 180,872 × 15
+##    MSOA11CD date         doy   dow stratum  d074 d75plus  dtot tmean year  month   day   ind imdscore
+##    &lt;chr&gt;    &lt;IDate&gt;    &lt;int&gt; &lt;int&gt; &lt;fct&gt;   &lt;int&gt;   &lt;int&gt; &lt;int&gt; &lt;dbl&gt; &lt;fct&gt; &lt;fct&gt; &lt;int&gt; &lt;int&gt;    &lt;dbl&gt;
+##  1 E020000… 2006-06-01   152     5 E02000…     0       0     0  11.6 2006  6         1     3     14.3
+##  2 E020000… 2006-06-02   153     6 E02000…     0       0     0  14.8 2006  6         2     3     14.3
+##  3 E020000… 2006-06-03   154     7 E02000…     0       0     0  17.1 2006  6         3     3     14.3
+##  4 E020000… 2006-06-04   155     1 E02000…     0       0     0  17.1 2006  6         4     3     14.3
+##  5 E020000… 2006-06-05   156     2 E02000…     0       0     0  16.5 2006  6         5     3     14.3
+##  6 E020000… 2006-06-06   157     3 E02000…     0       0     0  14.9 2006  6         6     3     14.3
+##  7 E020000… 2006-06-07   158     4 E02000…     0       0     0  18.7 2006  6         7     3     14.3
+##  8 E020000… 2006-06-08   159     5 E02000…     0       0     0  20.6 2006  6         8     3     14.3
+##  9 E020000… 2006-06-09   160     6 E02000…     0       0     0  20.1 2006  6         9     3     14.3
+## 10 E020000… 2006-06-10   161     7 E02000…     0       1     1  21.7 2006  6        10     3     14.3
+## # ℹ 180,862 more rows
+## # ℹ 1 more variable: imdrank &lt;dbl&gt;</code></pre>
+<h2 id="model-fitting-1">Model fitting</h2>
+<div class="sourceCode" id="cb37"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" tabindex="-1"></a><span class="do">## model fitting #-----------</span></span></code></pre></div>
+<p>DEFINE INTERACTION CROSS-BASES WITH LINEAR IMD SCORE</p>
+<div class="sourceCode" id="cb38"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" tabindex="-1"></a>(intval <span class="ot">&lt;-</span> <span class="fu">quantile</span>(datafull_int<span class="sc">$</span>imdscore, <span class="fu">c</span>(<span class="fl">0.25</span>, <span class="fl">0.75</span>)))</span></code></pre></div>
+<pre><code>##      25%      75% 
+## 14.36975 31.88014</code></pre>
+<div class="sourceCode" id="cb40"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" tabindex="-1"></a>cbint1 <span class="ot">&lt;-</span> cbtmean <span class="sc">*</span> (datafull_int<span class="sc">$</span>imdscore <span class="sc">-</span> intval[<span class="dv">1</span>])</span>
+<span id="cb40-2"><a href="#cb40-2" tabindex="-1"></a>cbint2 <span class="ot">&lt;-</span> cbtmean <span class="sc">*</span> (datafull_int<span class="sc">$</span>imdscore <span class="sc">-</span> intval[<span class="dv">2</span>])</span></code></pre></div>
+<p>RUN THE MODELS</p>
+<div class="sourceCode" id="cb41"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" tabindex="-1"></a>modint1 <span class="ot">&lt;-</span> <span class="fu">gnm</span>(<span class="at">formula =</span> dtot <span class="sc">~</span> cbtmean <span class="sc">+</span> spldoy<span class="sc">:</span><span class="fu">factor</span>(year) <span class="sc">+</span> <span class="fu">factor</span>(dow) <span class="sc">+</span> cbint1, </span>
+<span id="cb41-2"><a href="#cb41-2" tabindex="-1"></a>               <span class="at">eliminate =</span> stratum, </span>
+<span id="cb41-3"><a href="#cb41-3" tabindex="-1"></a>               <span class="at">family =</span> quasipoisson, </span>
+<span id="cb41-4"><a href="#cb41-4" tabindex="-1"></a>               <span class="at">data =</span> datafull_int,</span>
+<span id="cb41-5"><a href="#cb41-5" tabindex="-1"></a>               <span class="at">subset =</span> ind <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb41-6"><a href="#cb41-6" tabindex="-1"></a><span class="fu">summary</span>(modint1)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## gnm(formula = dtot ~ cbtmean + spldoy:factor(year) + factor(dow) + 
+##     cbint1, eliminate = stratum, family = quasipoisson, data = datafull_int,     subset = ind &gt; 0)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.2006  -0.5630  -0.4497  -0.3394   3.8758  
+## 
+## Coefficients of interest:
+##                             Estimate Std. Error t value Pr(&gt;|t|)  
+## cbtmeanv1.l1               0.0038304  0.1497268   0.026   0.9796  
+## cbtmeanv1.l2               0.0710599  0.0699622   1.016   0.3098  
+## cbtmeanv1.l3              -0.1937632  0.0798756  -2.426   0.0153 *
+## cbtmeanv2.l1              -0.3317142  0.5134304  -0.646   0.5182  
+## cbtmeanv2.l2               0.0102890  0.3027101   0.034   0.9729  
+## cbtmeanv2.l3              -0.2406607  0.2723101  -0.884   0.3768  
+## cbtmeanv3.l1              -0.1036073  0.1893140  -0.547   0.5842  
+## cbtmeanv3.l2               0.2749617  0.1094108   2.513   0.0120 *
+## cbtmeanv3.l3              -0.1661981  0.1068713  -1.555   0.1199  
+## factor(dow)2               0.0043315  0.0259429   0.167   0.8674  
+## factor(dow)3               0.0204849  0.0266103   0.770   0.4414  
+## factor(dow)4              -0.0281861  0.0274717  -1.026   0.3049  
+## factor(dow)5              -0.0416624  0.0265776  -1.568   0.1170  
+## factor(dow)6               0.0162345  0.0262318   0.619   0.5360  
+## factor(dow)7               0.0187498  0.0259483   0.723   0.4699  
+## cbint1v1.l1               -0.0002495  0.0108455  -0.023   0.9816  
+## cbint1v1.l2                0.0018997  0.0044899   0.423   0.6722  
+## cbint1v1.l3                0.0021074  0.0057391   0.367   0.7135  
+## cbint1v2.l1                0.0153123  0.0369861   0.414   0.6789  
+## cbint1v2.l2               -0.0159667  0.0183148  -0.872   0.3833  
+## cbint1v2.l3               -0.0137322  0.0193181  -0.711   0.4772  
+## cbint1v3.l1               -0.0004344  0.0128720  -0.034   0.9731  
+## cbint1v3.l2               -0.0082704  0.0064302  -1.286   0.1984  
+## cbint1v3.l3               -0.0027608  0.0071006  -0.389   0.6974  
+## spldoyb1:factor(year)2006 -0.1044190  0.0912610  -1.144   0.2526  
+## spldoyb2:factor(year)2006 -0.0810750  0.1533883  -0.529   0.5971  
+## spldoyb3:factor(year)2006 -0.0222899  0.0938078  -0.238   0.8122  
+## spldoyb1:factor(year)2013 -0.1685782  0.1013231  -1.664   0.0962 .
+## spldoyb2:factor(year)2013 -0.0480119  0.1957467  -0.245   0.8062  
+## spldoyb3:factor(year)2013  0.0088887  0.0941226   0.094   0.9248  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for quasipoisson family taken to be 1.000524)
+## 
+## Residual deviance: 87253 on 162748 degrees of freedom
+## AIC: NA
+## 
+## Number of iterations: 2</code></pre>
+<div class="sourceCode" id="cb43"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" tabindex="-1"></a>modint2 <span class="ot">&lt;-</span> <span class="fu">gnm</span>(<span class="at">formula =</span> dtot <span class="sc">~</span> cbtmean <span class="sc">+</span> spldoy<span class="sc">:</span><span class="fu">factor</span>(year) <span class="sc">+</span> <span class="fu">factor</span>(dow) <span class="sc">+</span> cbint2,</span>
+<span id="cb43-2"><a href="#cb43-2" tabindex="-1"></a>               <span class="at">eliminate =</span> stratum,</span>
+<span id="cb43-3"><a href="#cb43-3" tabindex="-1"></a>               <span class="at">family =</span> quasipoisson,</span>
+<span id="cb43-4"><a href="#cb43-4" tabindex="-1"></a>               <span class="at">data =</span> datafull_int,</span>
+<span id="cb43-5"><a href="#cb43-5" tabindex="-1"></a>               <span class="at">subset =</span> ind <span class="sc">&gt;</span> <span class="dv">0</span>)</span>
+<span id="cb43-6"><a href="#cb43-6" tabindex="-1"></a><span class="fu">summary</span>(modint2)</span></code></pre></div>
+<pre><code>## 
+## Call:
+## gnm(formula = dtot ~ cbtmean + spldoy:factor(year) + factor(dow) + 
+##     cbint2, eliminate = stratum, family = quasipoisson, data = datafull_int,     subset = ind &gt; 0)
+## 
+## Deviance Residuals: 
+##     Min       1Q   Median       3Q      Max  
+## -1.2006  -0.5630  -0.4497  -0.3394   3.8758  
+## 
+## Coefficients of interest:
+##                             Estimate Std. Error t value Pr(&gt;|t|)  
+## cbtmeanv1.l1              -0.0005382  0.1657702  -0.003   0.9974  
+## cbtmeanv1.l2               0.1043238  0.0777565   1.342   0.1797  
+## cbtmeanv1.l3              -0.1568616  0.0863152  -1.817   0.0692 .
+## cbtmeanv2.l1              -0.0635896  0.5621000  -0.113   0.9099  
+## cbtmeanv2.l2              -0.2692950  0.3233052  -0.833   0.4049  
+## cbtmeanv2.l3              -0.4811176  0.2912607  -1.652   0.0986 .
+## cbtmeanv3.l1              -0.1112146  0.1800142  -0.618   0.5367  
+## cbtmeanv3.l2               0.1301431  0.0991241   1.313   0.1892  
+## cbtmeanv3.l3              -0.2145414  0.0988689  -2.170   0.0300 *
+## factor(dow)2               0.0043315  0.0259429   0.167   0.8674  
+## factor(dow)3               0.0204849  0.0266103   0.770   0.4414  
+## factor(dow)4              -0.0281861  0.0274717  -1.026   0.3049  
+## factor(dow)5              -0.0416624  0.0265776  -1.568   0.1170  
+## factor(dow)6               0.0162345  0.0262318   0.619   0.5360  
+## factor(dow)7               0.0187498  0.0259483   0.723   0.4699  
+## cbint2v1.l1               -0.0002495  0.0108455  -0.023   0.9816  
+## cbint2v1.l2                0.0018997  0.0044899   0.423   0.6722  
+## cbint2v1.l3                0.0021074  0.0057391   0.367   0.7135  
+## cbint2v2.l1                0.0153123  0.0369861   0.414   0.6789  
+## cbint2v2.l2               -0.0159667  0.0183148  -0.872   0.3833  
+## cbint2v2.l3               -0.0137322  0.0193181  -0.711   0.4772  
+## cbint2v3.l1               -0.0004344  0.0128720  -0.034   0.9731  
+## cbint2v3.l2               -0.0082704  0.0064302  -1.286   0.1984  
+## cbint2v3.l3               -0.0027608  0.0071006  -0.389   0.6974  
+## spldoyb1:factor(year)2006 -0.1044190  0.0912610  -1.144   0.2526  
+## spldoyb2:factor(year)2006 -0.0810750  0.1533883  -0.529   0.5971  
+## spldoyb3:factor(year)2006 -0.0222899  0.0938078  -0.238   0.8122  
+## spldoyb1:factor(year)2013 -0.1685782  0.1013231  -1.664   0.0962 .
+## spldoyb2:factor(year)2013 -0.0480119  0.1957467  -0.245   0.8062  
+## spldoyb3:factor(year)2013  0.0088887  0.0941226   0.094   0.9248  
+## ---
+## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1
+## 
+## (Dispersion parameter for quasipoisson family taken to be 1.000524)
+## 
+## Residual deviance: 87253 on 162748 degrees of freedom
+## AIC: NA
+## 
+## Number of iterations: 2</code></pre>
+<p>TEST SIGNIFICANCE OF INTERACTION</p>
+<div class="sourceCode" id="cb45"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" tabindex="-1"></a><span class="fu">anova</span>(modfull, modint1, <span class="at">test=</span><span class="st">&quot;Chisq&quot;</span>)</span></code></pre></div>
+<pre><code>## Analysis of Deviance Table
+## 
+## Model 1: dtot ~ cbtmean + spldoy:factor(year) + factor(dow) - 1
+## Model 2: dtot ~ cbtmean + spldoy:factor(year) + factor(dow) + cbint1 - 
+##     1
+##   Resid. Df Resid. Dev Df Deviance Pr(&gt;Chi)
+## 1    162757      87258                     
+## 2    162748      87253  9   5.1184   0.8241</code></pre>
+<div class="sourceCode" id="cb47"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" tabindex="-1"></a><span class="fu">anova</span>(modfull, modint2, <span class="at">test=</span><span class="st">&quot;Chisq&quot;</span>)</span></code></pre></div>
+<pre><code>## Analysis of Deviance Table
+## 
+## Model 1: dtot ~ cbtmean + spldoy:factor(year) + factor(dow) - 1
+## Model 2: dtot ~ cbtmean + spldoy:factor(year) + factor(dow) + cbint2 - 
+##     1
+##   Resid. Df Resid. Dev Df Deviance Pr(&gt;Chi)
+## 1    162757      87258                     
+## 2    162748      87253  9   5.1184   0.8241</code></pre>
+<h2 id="predict-for-each-of-the-two-imd-values">PREDICT FOR EACH OF THE
+TWO IMD VALUES</h2>
+<div class="sourceCode" id="cb49"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb49-1"><a href="#cb49-1" tabindex="-1"></a><span class="do">## predict and plot #-------------------</span></span>
+<span id="cb49-2"><a href="#cb49-2" tabindex="-1"></a>cpint1 <span class="ot">&lt;-</span> <span class="fu">crosspred</span>(cbtmean, modint1, <span class="at">cen =</span> <span class="dv">16</span>)</span>
+<span id="cb49-3"><a href="#cb49-3" tabindex="-1"></a>cpint2 <span class="ot">&lt;-</span> <span class="fu">crosspred</span>(cbtmean, modint2, <span class="at">cen =</span> <span class="dv">16</span>)</span></code></pre></div>
+<h2 id="plot">PLOT</h2>
+<div class="sourceCode" id="cb50"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" tabindex="-1"></a>col <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;royalblue&quot;</span>, <span class="st">&quot;tomato3&quot;</span>)</span>
+<span id="cb50-2"><a href="#cb50-2" tabindex="-1"></a>parold <span class="ot">&lt;-</span> <span class="fu">par</span>(<span class="at">no.readonly =</span> T)</span>
+<span id="cb50-3"><a href="#cb50-3" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="fl">0.5</span>), <span class="at">las =</span> <span class="dv">1</span>, <span class="at">mgp =</span> <span class="fu">c</span>(<span class="fl">2.5</span>, <span class="dv">1</span>, <span class="dv">0</span>))</span>
+<span id="cb50-4"><a href="#cb50-4" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="#cb50-5" tabindex="-1"></a><span class="fu">plot</span>(cpint1, </span>
+<span id="cb50-6"><a href="#cb50-6" tabindex="-1"></a>     <span class="st">&quot;overall&quot;</span>,</span>
+<span id="cb50-7"><a href="#cb50-7" tabindex="-1"></a>     <span class="at">ylim =</span> <span class="fu">c</span>(<span class="fl">0.8</span>, <span class="dv">2</span>), </span>
+<span id="cb50-8"><a href="#cb50-8" tabindex="-1"></a>     <span class="at">ylab =</span> <span class="st">&quot;RR&quot;</span>, </span>
+<span id="cb50-9"><a href="#cb50-9" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="fu">expression</span>(<span class="fu">paste</span>(<span class="st">&quot;Temperature (&quot;</span> <span class="sc">*</span> degree, <span class="st">&quot;C)&quot;</span>)),</span>
+<span id="cb50-10"><a href="#cb50-10" tabindex="-1"></a>     <span class="at">col =</span> col[<span class="dv">1</span>], </span>
+<span id="cb50-11"><a href="#cb50-11" tabindex="-1"></a>     <span class="at">lwd =</span> <span class="fl">1.5</span>,</span>
+<span id="cb50-12"><a href="#cb50-12" tabindex="-1"></a>     <span class="at">ci.arg =</span> <span class="fu">list</span>(<span class="at">col =</span> <span class="fu">alpha</span>(col[<span class="dv">1</span>], <span class="fl">0.2</span>)))</span>
+<span id="cb50-13"><a href="#cb50-13" tabindex="-1"></a></span>
+<span id="cb50-14"><a href="#cb50-14" tabindex="-1"></a><span class="fu">lines</span>(cpint2, </span>
+<span id="cb50-15"><a href="#cb50-15" tabindex="-1"></a>      <span class="st">&quot;overall&quot;</span>,</span>
+<span id="cb50-16"><a href="#cb50-16" tabindex="-1"></a>      <span class="at">ci =</span> <span class="st">&quot;area&quot;</span>, </span>
+<span id="cb50-17"><a href="#cb50-17" tabindex="-1"></a>      <span class="at">col =</span> col[<span class="dv">2</span>], </span>
+<span id="cb50-18"><a href="#cb50-18" tabindex="-1"></a>      <span class="at">lwd =</span> <span class="fl">1.5</span>,</span>
+<span id="cb50-19"><a href="#cb50-19" tabindex="-1"></a>      <span class="at">ci.arg =</span> <span class="fu">list</span>(<span class="at">col =</span> <span class="fu">alpha</span>(col[<span class="dv">2</span>], <span class="fl">0.2</span>)))</span>
+<span id="cb50-20"><a href="#cb50-20" tabindex="-1"></a></span>
+<span id="cb50-21"><a href="#cb50-21" tabindex="-1"></a><span class="fu">legend</span>(<span class="st">&quot;top&quot;</span>, </span>
+<span id="cb50-22"><a href="#cb50-22" tabindex="-1"></a>       <span class="fu">c</span>(<span class="st">&quot;Low IMD score&quot;</span>, <span class="st">&quot;High IMD score&quot;</span>),</span>
+<span id="cb50-23"><a href="#cb50-23" tabindex="-1"></a>       <span class="at">lty =</span> <span class="dv">1</span>, </span>
+<span id="cb50-24"><a href="#cb50-24" tabindex="-1"></a>       <span class="at">lwd =</span> <span class="fl">1.5</span>, </span>
+<span id="cb50-25"><a href="#cb50-25" tabindex="-1"></a>       <span class="at">col =</span> col,</span>
+<span id="cb50-26"><a href="#cb50-26" tabindex="-1"></a>       <span class="at">bty =</span> <span class="st">&quot;n&quot;</span>, </span>
+<span id="cb50-27"><a href="#cb50-27" tabindex="-1"></a>       <span class="at">inset =</span> <span class="fl">0.05</span>, </span>
+<span id="cb50-28"><a href="#cb50-28" tabindex="-1"></a>       <span class="at">y.intersp =</span> <span class="dv">2</span>, </span>
+<span id="cb50-29"><a href="#cb50-29" tabindex="-1"></a>       <span class="at">cex =</span> <span class="fl">0.8</span>)</span></code></pre></div>
+<p><img role="img" src="data:image/png;base64,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" /><!-- --></p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb51-1"><a href="#cb51-1" tabindex="-1"></a><span class="fu">par</span>(parold)</span></code></pre></div>
+
+</body>
+</html>
